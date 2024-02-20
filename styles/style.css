@@ -1,15 +1,147 @@
-
 /*-------------------------------------
  * customize material design icon sizes 
  *-------------------------------------
  */
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
 
 .responsive {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+}
+
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
+
+/* New Color Palette:
+* Lightest (Main Background): #f2f2f2
+* Dark Blue (Primary): #3655b3  
+* Light Blue (Secondary): #d3deff  
+* Blueish-Purple (Accent): #a6bcff
+*/
+
+.bg-info {
+  background-color: #d3deff !important; /* Light blue for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #3655b3; /* Dark blue for brand name & nav links for visibility */
+}
+
+.btn-info {
+  color: #f2f2f2; /* Lightest shade for text on info button for contrast */
+  background-color: #d3deff; /* Light blue for button background */
+  border-color: #3655b3; /* Dark blue for button border */
+}
+
+.btn-primary {
+  color: #f2f2f2; /* Lightest shade for text */
+  font-size: 150%;
+  background-color: #3655b3; /* Dark blue for primary button background */
+  border-color: #a6bcff; /* Blueish-Purple  for border to use as accent */
+  border-width: thick;
+}
+
+body {
+  background-color: #f2f2f2; /* Lightest shade for body background to follow the 60% rule */
+}
+
+.navbar-brand {
+  font-family: "Handlee", cursive;
+  font-size: 2.25rem;
+}
+
+/* Style for radio button labels when not selected */
+.btn-outline-primary {
+  color: #3655b3; /* Dark blue text color for contrast */
+  border-color: #d3deff; /* Light blue border color */
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #f2f2f2; /* Lightest color for text */
+  background-color: #d3deff; /* Light blue background */
+  border-color: #3655b3; /* Dark blue border for emphasis */
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+  color: #f2f2f2; /* Lightest color for text */
+  background-color: #3655b3; /* Dark blue background for primary action */
+  border-color: #3655b3; /* Blueish-purple border to use as accent */
+}
+
+/* Custom styles for dropdown to match the new color palette */
+
+/* Style for the dropdown button */
+.btn-secondary {
+  color: #f2f2f2f2; /* Lightest color for text */
+  background-color: #3655b3; /* Dark blue for the button background */
+  border-color: #d3deff; /* Light blue for the button border */
+}
+
+/* Change dropdown button hover/focus styles */
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #f2f2f2; /* Lightest color remains for text */
+  background-color: #d3deff; /* Light blue for background on hover/focus */
+  border-color: #3655b3; /* Dark blue for border for emphasis */
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  background-color: #f2f2f2; /* Lightest color for dropdown background */
+  border-color: #d3deff; /* Light blue for border color */
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+  color: #3655b3; /* Dark blue for text color */
+}
+
+/* Style for dropdown item hover */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #f2f2f2; /* Lightest color for text on hover/focus */
+  background-color: #d3deff; /* Light blue for background on hover/focus */
+}
+
+.material-icons {
+  font-size: 24px;
+}
+
+/* color for login button */
+.btn-login {
+  color: #f2f2f2f2; /* Lightest color for text */
+  background-color: #3655b3; /* Dark blue for the button background */
+  border-color: #d3deff; /* Light blue for the button border */
+}
+
+/* color for logout button */
+.btn-logout {
+  color: #f2f2f2f2; /* Lightest color for text */
+  background-color: #3655b3; /* Dark blue for the button background */
+  border-color: #d3deff; /* Light blue for the button border */
+}
+
+#name-goes-here {
+  font-family: "Handlee", cursive;
+  font-size: 3rem;
+}
