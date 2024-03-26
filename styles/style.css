@@ -21,6 +21,10 @@
   height: auto;
 }
 
+.material-icons {
+  cursor: pointer;
+}
+
 /*
 * --------------------------------------------
 * Custom styles to override the default Bootstrap ones
